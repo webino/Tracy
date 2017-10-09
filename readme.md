@@ -42,6 +42,7 @@ Alternatively, you can download the whole package or [tracy.phar](https://github
 
 | Tracy | PHP | compatible with browsers
 |-----------|---------------|----------
+| Tracy 3.0 (dev) | PHP 7.1 – 7.3 | Chrome 49+, Firefox 45+, MS Edge 14+, Safari 10+ and iOS Safari 10.2+
 | Tracy 2.7 | PHP 7.1 – 7.3 | Chrome 49+, Firefox 45+, MS Edge 14+, Safari 10+ and iOS Safari 10.2+
 | Tracy 2.6 | PHP 7.1 – 7.3 | Chrome 49+, Firefox 45+, MS Edge 14+, Safari 10+ and iOS Safari 10.2+
 | Tracy 2.5 | PHP 5.4.4 – 7.3 | Chrome 49+, Firefox 45+, MS Edge 12+, Safari 10+ and iOS Safari 10.2+
