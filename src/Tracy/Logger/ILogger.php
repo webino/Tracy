@@ -23,5 +23,5 @@ interface ILogger
 		EXCEPTION = 'exception',
 		CRITICAL = 'critical';
 
-	function log($value, $level = self::INFO);
+	function log($value, string $level = self::INFO);
 }
