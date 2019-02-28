@@ -50,7 +50,6 @@ class TracyExtension extends Nette\DI\CompilerExtension
 			'scream' => Expect::bool()->dynamic(),
 			'bar' => Expect::listOf('class|Nette\DI\Definitions\Statement'),
 			'blueScreen' => Expect::listOf('callable'),
-			'editorMapping' => Expect::arrayOf('string')->dynamic(),
 			'netteMailer' => Expect::bool(true),
 		]);
 	}
