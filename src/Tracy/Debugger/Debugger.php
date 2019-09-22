@@ -398,10 +398,12 @@ class Debugger
 			&& !isset($_GET['_tracy_skip_error'])
 			&& (is_bool(self::$strictMode) ? self::$strictMode : ((self::$strictMode & $severity) === $severity))
 		) {
-			$e = new ErrorException($message, 0, $severity, $file, $line);
-			$e->context = $context;
-			$e->skippable = true;
-			self::exceptionHandler($e);
+            if ($severity !== E_DEPRECATED && $severity !== E_USER_DEPRECATED && $severity !== E_USER_NOTICE) {
+                $e = new ErrorException($message, 0, $severity, $file, $line);
+                $e->context = $context;
+                $e->skippable = true;
+                self::exceptionHandler($e);
+            }
 		}
 
 		$message = 'PHP ' . Helpers::errorTypeToString($severity) . ': ' . Helpers::improveError($message, $context);
